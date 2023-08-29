@@ -112,8 +112,8 @@ export const transcodeVideo = onObjectFinalized(
           data: {
             url: downloadURL,
             meta: {
-              name: fileName,
-              path: filePath,
+              name: filePath.split("/")[2],
+              fileName,
               contentURI: downloadURL,
               contentRef: filePath,
             },
